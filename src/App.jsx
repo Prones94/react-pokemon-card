@@ -1,9 +1,13 @@
 import React from 'react'
 import CardTable from './CardTable'
+import PokeDex from './Pokedex'
 
 const App = () => {
   return (
-    <CardTable />
+    <div>
+      <CardTable />
+      <Pokedex />
+    </div>
   )
 }
 

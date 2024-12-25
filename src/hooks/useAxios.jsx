@@ -8,7 +8,11 @@ const useAxios = () => {
     const response = await axios.get(`${baseUrl}${endpoint}`)
     setData((data) => [...data, {...response.data}])
   }
-  return [data,addData]
+
+  const clearData = () => {
+    setData([])
+  }
+  return [data,addData, clearData]
 }
 
 export default useAxios
